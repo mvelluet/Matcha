@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="noUiSlider.10.0.0/nouislider.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+</head>
+<body class="mike_fd">
+	<header>
+		<nav class="nav-extended">
+			<div class="nav-wrapper container">
+				<a href="index.html" class="left brand-logo">Matcha</a>
+				<ul id="nav-mobile" class="right">
+					<li><a href="#deconnexion"><i class="material-icons right modal-action modal-close btn-flat">power_settings_new</i></a></li>
+					<li><a class="modal-trigger" href="#menu"><i class="material-icons right modal-action modal-close btn-flat">settings</i></a></li>
+				</ul>
+			</div>
+			<div class="nav-content">
+				<div class="container">
+					<ul class="tabs tabs-transparent hide-on-small-only">
+						<li><a class="mike_inline_icone_notif mike_padding_left_7" href=""><i class="mike_star_header material-icons">star</i><span class="badge white-text">4</span></a></li>
+						<li><a class="modal-trigger mike_padding_left_7" href="#visite">Visite(s)<span class="new badge" data-badge-caption="">4</span></a></li>
+						<li><a class="modal-trigger mike_padding_left_7" href="#like">Mes like(s)<span class="new badge" data-badge-caption="">4</span></a></li>
+						<li><a class="mike_padding_left_7" href="message.html">Message(s)<span class="new badge" data-badge-caption="">4</span></a></li>	
+					</ul>
+				</div>
+				<ul id="nav-mobile" class="container hide-on-med-and-up tabs tabs-transparent">
+					<li><a class="mike_padding_left_12 mike_inline_icone_notif" href=""><i class="mike_star_header material-icons">star</i><span class="new white-text" data-badge-caption="">4</span></a></li>
+					<li><a class="modal-trigger mike_padding_left_12 mike_inline_icone_notif" href="#visite"><i class="mike_star_header material-icons">remove_red_eye</i><span class="new badge" data-badge-caption="">4</span></a></li>
+					<li><a class="modal-trigger mike_padding_left_12 mike_inline_icone_notif" href="#like"><i class="mike_star_header material-icons"><i class="material-icons">person_add</i></i><span class="new badge" data-badge-caption="">4</span></a></li>
+					<li><a class="mike_padding_left_12 mike_inline_icone_notif" href="message.html"><i class="mike_star_header material-icons">message</i><span class="new badge" data-badge-caption="">4</span></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<br>
+	<br>
+	<br>
+
+	<br>
+	<!-- Modal -->
+	<!-- Menu -->
+	<div id="menu" class="modal">
+		<div class="modal-content">
+			<h4>Paramètre<i class="material-icons right modal-action modal-close btn-flat">close</i></h4>
+			<div class="row">
+				<div class="col s12">
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="nom" type="text" class="validate">
+								<label for="nom">Nom</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="prenom" type="text" class="validate">
+								<label for="prenom">Prénom</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="password" type="password" class="validate">
+								<label for="password">Mot de passe</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="password2" type="password" class="validate">
+								<label for="password2">Vérification du mot de passe</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="email" type="email" class="validate">
+								<label for="email" data-error="L'email ne semble pas correct" data-success="OK !">Email</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Modifier</a>
+		</div>
+	</div>
+	<!-- recherche -->
+	<div id="recherche" class="modal">
+		<div class="modal-content">
+			<h4>Recherche avancée<i class="material-icons right modal-action modal-close btn-flat">close</i></h4>
+			<div class="col s12">
+				<div class="card-panel grey lighten-5 z-depth-1">
+					<h5>Age:</h5>
+					<div id="age" class="mike_color"></div>
+					<br>
+					<span class="example-val" id="skip-value-lower"></span>
+					<span class="example-val" id="skip-value-upper"></span>
+				</div>
+				<div class="card-panel grey lighten-5 z-depth-1">
+					<h5>Popularité:</h5>
+					<div id="popularite"></div>
+					<br>
+					<span class="example-val" id="popularite-value-lower"></span>
+					<span class="example-val" id="popularite-value-upper"></span>
+				</div>
+				<div class="card-panel grey lighten-5 z-depth-1">
+					<h5>Localisation:</h5>
+					<input id="Localisation" type="search" class="validate" placeholder="Paris">
+				</div>	
+				<div class="card-panel grey lighten-5 z-depth-1">
+					<h5>Tag:</h5>
+					<input id="Tag" type="search" class="validate" placeholder="Blond, Brune, Grand, Petite, Yeux Bleu">
+				</div>
+			</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Lancer la recherche</a>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="container">
+			<div class="col s12">
+				<div class="card-panel grey lighten-5 z-depth-1">
+					<h4 class="left">Recherche des profils</h4>
+					<div class="right mike_flex"><a class="modal-trigger" href="#recherche">Avancée<i class="material-icons modal-action modal-close btn-flat mike_padding_left_7">add_box</i></a></div>
+					<br>
+					<br>
+					<div class="row">
+						<div class="col s12">
+							<div class="col s12 m6 l4 xl3">
+								<div class="card">
+									<div class="card-image waves-effect waves-block waves-light">
+										<img class="activator" src="img/photo.jpg">
+									</div>
+									<div class="card-content">
+										<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+										<p><a href="#">This is a link</a></p>
+									</div>
+									<div class="card-reveal">
+										<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+										<p>Here is some more information about this product that is only revealed once clicked on.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col s12 m6 l4 xl3">
+								<div class="card">
+									<div class="card-image waves-effect waves-block waves-light">
+										<img class="activator" src="img/photo.jpg">
+									</div>
+									<div class="card-content">
+										<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+										<p><a href="#">This is a link</a></p>
+									</div>
+									<div class="card-reveal">
+										<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+										<p>Here is some more information about this product that is only revealed once clicked on.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col s12 m6 l4 xl3">
+								<div class="card">
+									<div class="card-image waves-effect waves-block waves-light">
+										<img class="activator" src="img/photo.jpg">
+									</div>
+									<div class="card-content">
+										<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+										<p><a href="#">This is a link</a></p>
+									</div>
+									<div class="card-reveal">
+										<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+										<p>Here is some more information about this product that is only revealed once clicked on.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col s12 m6 l4 xl3">
+								<div class="card">
+									<div class="card-image waves-effect waves-block waves-light">
+										<img class="activator" src="img/photo.jpg">
+									</div>
+									<div class="card-content">
+										<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+										<p><a href="#">This is a link</a></p>
+									</div>
+									<div class="card-reveal">
+										<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+										<p>Here is some more information about this product that is only revealed once clicked on.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col s12 m6 l4 xl3">
+								<div class="card">
+									<div class="card-image waves-effect waves-block waves-light">
+										<img class="activator" src="img/photo.jpg">
+									</div>
+									<div class="card-content">
+										<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+										<p><a href="#">This is a link</a></p>
+									</div>
+									<div class="card-reveal">
+										<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+										<p>Here is some more information about this product that is only revealed once clicked on.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col s12 m6 l4 xl3">
+								<div class="card">
+									<div class="card-image waves-effect waves-block waves-light">
+										<img class="activator" src="img/photo.jpg">
+									</div>
+									<div class="card-content">
+										<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+										<p><a href="#">This is a link</a></p>
+									</div>
+									<div class="card-reveal">
+										<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+										<p>Here is some more information about this product that is only revealed once clicked on.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Footer Content</h5>
+					<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2017 Copyright Text
+				<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+			</div>
+		</div>
+	</footer>
+	<!--  Scripts -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+	    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+	    $('.modal').modal();
+	});
+</script>
+<script src="noUiSlider.10.0.0/nouislider.min.js"></script>
+<script type="text/javascript">
+	var skipSlider = document.getElementById('age');
+
+	noUiSlider.create(skipSlider, {
+		range: {
+			'min': 18,
+			'1.22%': 19,
+			'2.44%': 20,
+			'3.66%': 21,
+			'4.88%': 22,
+			'6.1%': 23,
+			'7.32%': 24,
+			'8.54%': 25,
+			'9.76%': 26,
+			'10.98%': 27,
+			'12.2%': 28,
+			'13.42%': 29,
+			'14.64%': 30,
+			'15.86%': 31,
+			'17.08%': 32,
+			'18.3%': 33,
+			'19.52%': 34,
+			'20.74%': 35,
+			'21.96%': 36,
+			'23.18%': 37,
+			'24.4%': 38,
+			'25.62%': 39,
+			'26.84%': 40,
+			'28.06%': 41,
+			'29.28%': 42,
+			'30.5%': 43,
+			'31.72%': 44,
+			'32.94%': 45,
+			'34.16%': 46,
+			'35.38%': 47,
+			'36.6%': 48,
+			'37.82%': 49,
+			'39.04%': 50,
+			'40.26%': 51,
+			'41.48%': 52,
+			'42.7%': 53,
+			'43.92%': 54,
+			'45.14%': 55,
+			'46.36%': 56,
+			'47.58%': 57,
+			'48.8%': 58,
+			'50.02%': 59,
+			'51.24%': 60,
+			'52.46%': 61,
+			'53.68%': 62,
+			'54.9%': 63,
+			'56.12%': 64,
+			'57.34%': 65,
+			'58.56%': 66,
+			'59.78%': 67,
+			'61%': 68,
+			'62.22%': 69,
+			'63.44%': 70,
+			'64.66%': 71,
+			'65.88%': 72,
+			'67.1%': 73,
+			'68.32%': 74,
+			'69.54%': 75,
+			'70.76%': 76,
+			'71.98%': 77,
+			'73.2%': 78,
+			'74.42%': 79,
+			'75.64%': 80,
+			'76.86%': 81,
+			'78.08%': 82,
+			'79.3%': 83,
+			'80.52%': 84,
+			'81.74%': 85,
+			'82.96%': 86,
+			'84.18%': 87,
+			'85.4%': 88,
+			'86.62%': 89,
+			'87.84%': 90,
+			'89.06%': 91,
+			'90.28%': 92,
+			'91.5%': 93,
+			'92.72%': 94,
+			'93.94%': 95,
+			'95.16%': 96,
+			'96.38%': 97,
+			'97.6%': 98,
+			'98.82%': 99,
+			'max': 100
+		},
+		snap: true,
+		start: [25, 40]
+	});
+
+	var skipValues = [
+	document.getElementById('skip-value-lower'),
+	document.getElementById('skip-value-upper')
+	];
+
+	skipSlider.noUiSlider.on('update', function( values, handle ) {
+		skipValues[handle].innerHTML = values[handle];
+	});
+</script>
+<script type="text/javascript">
+	var popularite = document.getElementById('popularite');
+
+	noUiSlider.create(popularite, {
+		range: {
+			'min': 0,
+			'10%': 100,
+			'30%': 300,
+			'40%': 400,
+			'50%': 500,
+			'60%': 600,
+			'70%': 700,
+			'80%': 800,
+			'90%': 900,
+			'max': 1000
+		},
+		snap: true,
+		start: [0, 1000]
+	});
+
+	var populariteValue = [
+	document.getElementById('popularite-value-lower'),
+	document.getElementById('popularite-value-upper')
+	];
+
+	console.log(populariteValue[0].innerHTML);
+	popularite.noUiSlider.on('update', function( values, handle ) {
+		populariteValue[handle].innerHTML = values[handle];
+	});
+</script>
+</body>
+</html>

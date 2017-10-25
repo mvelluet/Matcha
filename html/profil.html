@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+</head>
+<body class="mike_fd">
+	<header>
+		<nav>
+			<div class="nav-wrapper container">
+				<a href="#" class="left brand-logo">Matcha</a>
+				<ul id="nav-mobile" class="right">
+					<li><a href="#deconnexion"><i class="material-icons right modal-action modal-close btn-flat">search</i></a></li>
+					<li><a href="#deconnexion"><i class="material-icons right modal-action modal-close btn-flat">power_settings_new</i></a></li>
+					<li><a class="modal-trigger" href="#menu"><i class="material-icons right modal-action modal-close btn-flat">settings</i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<br>
+	<br>
+	<br>
+
+	<br>
+	<!-- Modal -->
+	<!-- Menu -->
+	<div id="menu" class="modal">
+		<div class="modal-content">
+			<h4>Paramètre<i class="material-icons right modal-action modal-close btn-flat">close</i></h4>
+			<div class="row">
+				<div class="col s12">
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="nom" type="text" class="validate">
+								<label for="nom">Nom</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="prenom" type="text" class="validate">
+								<label for="prenom">Prénom</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="password" type="password" class="validate">
+								<label for="password">Mot de passe</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="password2" type="password" class="validate">
+								<label for="password2">Vérification du mot de passe</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="email" type="email" class="validate">
+								<label for="email" data-error="L'email ne semble pas correct" data-success="OK !">Email</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Modifier</a>
+		</div>
+	</div>
+
+	<nav class="container">
+		<div class="nav-wrapper ">
+			<div class="left mike_carre" style="background-image: url(img/small_mvelluet.jpg)"></div>
+			<p class="left mike_center_horizontal hide-on-med-and-down">Mike Velluet</p>
+			<p class="left mike_center_horizontal hide-on-large-only">Mike</p>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a class="mike_inline_icone_notif mike_padding_left_7" href=""><i class="material-icons">star</i><span class="badge white-text">4</span></a></li>
+				<li><a class="modal-trigger mike_padding_left_7" href="#visite">Visite(s)<span class="new badge" data-badge-caption="">4</span></a></li>
+				<li><a class="modal-trigger mike_padding_left_7" href="#like">Mes like(s)<span class="new badge" data-badge-caption="">4</span></a></li>
+				<li><a class="mike_padding_left_7" href="message.html">Message(s)<span class="new badge" data-badge-caption="">4</span></a></li>	
+			</ul>
+			<ul id="nav-mobile" class="right hide-on-large-only hide-on-small-only">
+				<li><a class="mike_padding_left_12 mike_inline_icone_notif" href=""><i class="material-icons">star</i><span class="new white-text" data-badge-caption="">4</span></a></li>
+				<li><a class="modal-trigger mike_padding_left_12 mike_inline_icone_notif" href="#visite"><i class="material-icons">remove_red_eye</i><span class="new badge" data-badge-caption="">4</span></a></li>
+				<li><a class="modal-trigger mike_padding_left_12 mike_inline_icone_notif" href="#like"><i class="material-icons"><i class="material-icons">person_add</i></i><span class="new badge" data-badge-caption="">4</span></a></li>
+				<li><a class="mike_padding_left_12 mike_inline_icone_notif" href="message.html"><i class="material-icons">message</i><span class="new badge" data-badge-caption="">4</span></a></li>
+			</ul>
+		</div>
+	</nav>
+	<br>
+	<br>
+	<br>
+	<br>
+	<nav class="container hide-on-med-and-up">
+		<div class="nav-wrapper container">
+			<ul id="nav-mobile">
+				<li><a class="mike_padding_left_7 mike_inline_icone_notif" href=""><i class="material-icons">star</i><span class="white-text badge" data-badge-caption="">4</span></a></li>
+				<li><a class="modal-trigger mike_padding_left_7 mike_inline_icone_notif" href="#visite"><i class="material-icons">remove_red_eye</i><span class="new badge" data-badge-caption="">4</span></a></li>
+				<li><a class="modal-trigger mike_padding_left_7 mike_inline_icone_notif" href="#like"><i class="material-icons"><i class="material-icons">person_add</i></i><span class="new badge" data-badge-caption="">4</span></a></li>
+				<li><a class="mike_padding_left_7 mike_inline_icone_notif" href="message.html"><i class="material-icons">message</i><span class="new badge" data-badge-caption="">4</span></a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- modal -->
+	<!-- visite -->
+	<div id="visite" class="modal">
+		<div class="modal-content">
+			<h4>Mes visites<i class="material-icons right modal-action modal-close btn-flat">close</i></h4>
+			<div class="row hide-on-small-only">
+				<br>
+				<div class="col s12">
+					<div class="col s4 left">
+						<div class="left mike_carre" style="background-image: url(img/small_mvelluet.jpg)"></div>
+					</div>
+					<div class="col s8">
+						<div class="card-panel lighten-7 z-depth-1"><p style="margin: 0px;">Mike Velluet - 25 - Paris - #Tag #Tag..</p></div>
+					</div>
+				</div>
+				<div class="col s12">
+					<div class="col s4 right">
+						<div class="left mike_carre" style="background-image: url(img/small_mvelluet.jpg)"></div>
+					</div>
+					<div class="col s8">
+						<div class="card-panel lighten-7 z-depth-1"><p style="margin: 0px;">Mike Velluet - 25 - Paris - #Tag #Tag..</p></div>
+					</div>
+				</div>
+				<div class="col s12">
+					<div class="col s4 left">
+						<div class="left mike_carre" style="background-image: url(img/small_mvelluet.jpg)"></div>
+					</div>
+					<div class="col s8">
+						<div class="card-panel lighten-7 z-depth-1"><p style="margin: 0px;">Mike Velluet - 25 - Paris - #Tag #Tag..</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="row hide-on-med-and-up">
+				<br>
+				<div class="col s12">
+					<div class="col s12 left">
+						<div class="left mike_carre" style="background-image: url(img/small_mvelluet.jpg)"></div>
+						<div class="card-panel lighten-7 z-depth-1"><p style="margin: 0px;">Mike Velluet - 25 - Paris - #Tag #Tag..</p></div>
+					</div>
+				</div>
+				<div class="col s12">
+					<div class="col s12 left">
+						<div class="left mike_carre" style="background-image: url(img/small_mvelluet.jpg)"></div>
+						<div class="card-panel lighten-7 z-depth-1"><p style="margin: 0px;">Mike Velluet - 25 - Paris - #Tag #Tag..</p></div>
+					</div>
+				</div><div class="col s12">
+					<div class="col s12 left">
+						<div class="left mike_carre" style="background-image: url(img/small_mvelluet.jpg)"></div>
+						<div class="card-panel lighten-7 z-depth-1"><p style="margin: 0px;">Mike Velluet - 25 - Paris - #Tag #Tag..</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- like -->
+	<div id="like" class="modal">
+		<div class="modal-content">
+			<h4>Matcha !<i class="material-icons right modal-action modal-close btn-flat">close</i></h4>
+			<div class="row hide-on-small-only">
+				<br>
+				<div class="col s12">
+					<div class="col s4 left">
+						<div class="left mike_carre" style="background-image: url(img/small_mvelluet.jpg)"></div>
+					</div>
+					<div class="col s8">
+						<div class="card-panel lighten-7 z-depth-1"><p style="margin: 0px;">Mike Velluet - 25 - Paris - #Tag #Tag..</p></div>
+					</div>
+				</div>
+				<div class="col s12">
+					<div class="col s4 right">
+						<div class="left mike_carre" style="background-image: url(img/small_mvelluet.jpg)"></div>
+					</div>
+					<div class="col s8">
+						<div class="card-panel lighten-7 z-depth-1"><p style="margin: 0px;">Mike Velluet - 25 - Paris - #Tag #Tag..</p></div>
+					</div>
+				</div>
+				<div class="col s12">
+					<div class="col s4 left">
+						<div class="left mike_carre" style="background-image: url(img/small_mvelluet.jpg)"></div>
+					</div>
+					<div class="col s8">
+						<div class="card-panel lighten-7 z-depth-1"><p style="margin: 0px;">Mike Velluet - 25 - Paris - #Tag #Tag..</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="row hide-on-med-and-up">
+				<br>
+				<div class="col s12">
+					<div class="col s12 left">
+						<div class="left mike_carre" style="background-image: url(img/small_mvelluet.jpg)"></div>
+						<div class="card-panel lighten-7 z-depth-1"><p style="margin: 0px;">Mike Velluet - 25 - Paris - #Tag #Tag..</p></div>
+					</div>
+				</div>
+				<div class="col s12">
+					<div class="col s12 left">
+						<div class="left mike_carre" style="background-image: url(img/small_mvelluet.jpg)"></div>
+						<div class="card-panel lighten-7 z-depth-1"><p style="margin: 0px;">Mike Velluet - 25 - Paris - #Tag #Tag..</p></div>
+					</div>
+				</div><div class="col s12">
+					<div class="col s12 left">
+						<div class="left mike_carre" style="background-image: url(img/small_mvelluet.jpg)"></div>
+						<div class="card-panel lighten-7 z-depth-1"><p style="margin: 0px;">Mike Velluet - 25 - Paris - #Tag #Tag..</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col s12 m8 offset-m2 l6 offset-l3 container">
+		<div class="card-panel grey lighten-5 z-depth-1">
+			<div class="valign-wrapper">
+				<div class="col s12 offset-m2">
+					<span class="black-text right">
+						Actuellement localisé à Paris
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col s12 m8 offset-m2 l6 offset-l3 container">
+		<div class="card-panel grey lighten-5 z-depth-1">
+			<div class="row valign-wrapper">
+				<div class="col s6 offset-m2">
+					<h5>Je suis:</h5>
+					<p>Un Homme</p>
+					<p>Heterosexuelle</p>
+					<p>Age: 25 ans</p>
+				</div>
+				<div class="col s6">
+					<h5>Je recherche</h5>
+					<p>Une femme</p>
+					<p>Heterosexuelle</p>
+					<p>Age entre 20 et 25 ans</p>
+				</div>
+			</div>
+			<a href="#iam" class="btn-floating btn-large waves-effect waves-light red modal-trigger"><i class="material-icons">mode_edit</i></a>
+		</div>
+	</div>
+
+	<!-- modal -->
+	<!-- je suis -->
+	<div id="iam" class="modal">
+		<div class="modal-content">
+			<form action="#">
+				<h4>Je suis:<i class="material-icons right modal-action modal-close btn-flat">close</i></h4>
+				<div class="row">
+					<p>Sexe:</p>
+					<div class="col s12">
+						<p>
+							<input name="group1" type="radio" id="test1" />
+							<label for="test1">Homme</label>
+						</p>
+						<p>
+							<input name="group1" type="radio" id="test2" />
+							<label for="test2">Femme</label>
+						</p>
+						<br>
+					</div>
+					<hr>
+					<div class="col s12">
+						<p>orientation sexuel:</p>
+						<p>
+							<input name="group2" type="radio" id="orientation1" />
+							<label for="orientation1">Hétérosexuel(le)</label>
+						</p>
+						<p>
+							<input name="group2" type="radio" id="orientation2" />
+							<label for="orientation2">Homosexuel(le)</label>
+						</p>
+						<p>
+							<input checked="true" name="group2" type="radio" id="orientation3" />
+							<label for="orientation3">Bisexuel(le)</label>
+						</p>
+						<br>
+					</div>
+					<hr>
+					<div class="col s12">
+						<p>Mon âge:</p>
+						<div class="input-field inline">
+							<input id="age" type="number" min="18" max="100" placeholder="18">
+						</div>
+						<br>
+					</div>
+					<hr>
+					<h4>Je recherche:</h4>
+					<div class="col s12">
+						<p>Sexe:</p>
+						<p>
+							<input name="group3" type="radio" id="recherche1" />
+							<label for="recherche1">Homme</label>
+						</p>
+						<p>
+							<input name="group3" type="radio" id="recherche2" />
+							<label for="recherche2">Femme</label>
+						</p>
+						<br>
+					</div>
+					<hr>
+					<div class="col s12">
+						<p>Orientation sexuel:</p>
+						<p>
+							<input name="group4" type="radio" id="orientation10" />
+							<label for="orientation10">Hétérosexuel-le</label>
+						</p>
+						<p>
+							<input name="group4" type="radio" id="orientation20" />
+							<label for="orientation20">Homosexuel-le</label>
+						</p>
+						<p>
+							<input checked="true" name="group4" type="radio" id="orientation30" />
+							<label for="orientation30">Bisexuel-le</label>
+						</p>
+						<br>
+					</div>
+					<hr>
+					<div class="col s12">
+						<div class="mike_inline_icone_notif">
+							<p>Age entre:</p>
+							<div class="input-field inline">
+								<input id="age" type="number" min="18" max="100" placeholder="18">
+							</div>
+							<p>et</p>
+							<div class="input-field inline">
+								<input id="age" type="number" min="18" max="100" placeholder="100">
+							</div>
+							<br>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn">Modifier</a>
+		</div>
+	</div>
+	<div class="col s12 m8 offset-m2 l6 offset-l3 container">
+		<div class="card-panel grey lighten-5 z-depth-1">
+			<div class="row valign-wrapper">
+				<div class="col s12 offset-m2">
+					<span class="black-text">
+						<h5>Ma bio</h5>
+						<form>
+							<div class="row">
+								<div class="input-field">
+									<textarea placeholder="« Belle plume cherche joli crayon de couleur pour écrire ensemble les plus belles pages de notre vie . Dans la joie de nous décrire, Arc-en-Cielement vôtre ! »" id="textarea1" class="materialize-textarea"></textarea>
+								</div>
+							</div>
+						</form>
+						<p>Lorem Ipsum</p>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col s12 m8 offset-m2 l6 offset-l3 container">
+		<div class="card-panel grey lighten-5 z-depth-1">
+			<div class="row valign-wrapper">
+				<div class="col s12">
+					<form action="#">
+						<div class="file-field input-field">
+							<div class="btn">
+								<span>File</span>
+								<input type="file">
+							</div>
+							<div class="file-path-wrapper">
+								<input class="file-path validate" type="text" placeholder="Ajouter une photo">
+							</div>
+						</div>
+					</form>
+					<div class="slider">
+						<ul class="slides">
+							<li>
+								<img src="img/photo.jpg"> <!-- random image -->
+								<div class="caption center-align">
+								</div>
+							</li>
+							<li>
+								<img src="img/photo.jpg"> <!-- random image -->
+								<div class="caption left-align">
+								</div>
+							</li>
+							<li>
+								<img src="img/photo.jpg"> <!-- random image -->
+								<div class="caption right-align">
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col s12 m8 offset-m2 l6 offset-l3 container">
+		<div class="card-panel grey lighten-5 z-depth-1">
+			<div class="row valign-wrapper">
+				<div class="col s12 offset-m2">
+					<span class="black-text">
+						<h5>Mes intérêt</h5>
+						<div class="row">
+							<form class="col s12">
+								<div class="row">
+									<div class="input-field col s6">
+										<input placeholder="Ajouter un tag" id="first_name" type="text" class="validate">
+										<label for="first_name">#Tag</label>
+									</div>
+									<div class="input-field col s3">
+										<a class="waves-effect waves-light btn">Ajouter</a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="chip">#Tag<i class="close material-icons">close</i></div>
+						<div class="chip">#Tag<i class="close material-icons">close</i></div>
+						<div class="chip">#Tag<i class="close material-icons">close</i></div>
+						<div class="chip">#Tag<i class="close material-icons">close</i></div>
+						<div class="chip">#Tag<i class="close material-icons">close</i></div>
+						<div class="chip">#Tag<i class="close material-icons">close</i></div>
+						<div class="chip">#Tag<i class="close material-icons">close</i></div>
+						<div class="chip">#Tag<i class="close material-icons">close</i></div>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col s12 m8 offset-m2 l6 offset-l3 container">
+		<div class="card-panel grey lighten-5 z-depth-1">
+			<div class="row valign-wrapper mike_margin_zero">
+				<div class="col s12">
+					
+					<a href="#" class="right btn waves-effect waves-light">Signaler</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Footer Content</h5>
+					<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2014 Copyright Text
+				<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+			</div>
+		</div>
+	</footer>
+	<!--  Scripts -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+	    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+	    $('.modal').modal();
+	    $('.slider').slider();
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+	min-width: 415px;
+}
+
+.mike_fd {
+	background-image: url(../img/tree.jpg);
+	background-attachment: fixed;
+	background-position: 100%;
+}
+
+.mike_carre {
+	height: 130px;
+	width: 130px;
+	position: relative;
+	top: -34px;
+	left: -16px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	border-radius: 50%;
+}
+
+.mike_rond_chat {
+	min-height: 80px;
+	min-width: 80px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	border-radius: 50%;
+}
+
+.mike_ligne_photo_chat {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.mike_center_horizontal {
+	margin: 0px;
+}
+
+.mike_overflow {
+	overflow: auto;
+}
+
+.mike_inline_icone_notif {
+	display: -webkit-box;
+}
+
+.mike_padding_left_12 {
+	padding: 0px 12px;
+}
+
+.mike_padding_left_7 {
+	padding: 0px 7px;
+}
+
+.mike_scrollbar {
+    overflow-x: scroll;
+}
+
+#mike_scrollbar_chat::-webkit-scrollbar
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)!important;
+	border-radius: 10px!important;
+	background-color: #F5F5F5!important;
+}
+
+.mike_star_header {
+    position: relative;
+    top: -18px;
+}
+
+.mike_online {
+	color: white;
+}
+
+/*.mike_color {
+	background: #26A69A;
+}*/
+
+.mike_flex {
+	display: flex;
+}
+
+.mike_margin_zero {
+  margin: 0px;
+}
+
+.mike_form_info {
+	margin-top: 25px;
+}

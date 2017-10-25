@@ -1,0 +1,35 @@
+<?php
+echo '<nav class="container">';
+echo '<div class="nav-wrapper ">';
+echo '	<div class="left mike_carre" style="background-image: url(img/small_mvelluet.jpg)"></div>';
+echo '	<p class="left mike_center_horizontal hide-on-med-and-down">' . ucfirst ($_SESSION["UTI_NOM"]) . ' ' . ucfirst ($_SESSION["UTI_PRENOM"]) . ' </p>';
+echo '	<p class="left mike_center_horizontal hide-on-large-only">' . ucfirst ($_SESSION["UTI_PRENOM"]) . '</p>';
+echo '	<ul id="nav-mobile" class="right hide-on-med-and-down">';
+echo '		<li><a class="mike_inline_icone_notif mike_padding_left_7" href=""><i class="material-icons">star</i><span class="badge white-text">4</span></a></li>';
+echo '		<li><a class="modal-trigger mike_padding_left_7" href="#visite">Visite(s)<span class="new badge" data-badge-caption="">4</span></a></li>';
+echo '		<li><a class="modal-trigger mike_padding_left_7" href="#like">Mes like(s)<span class="new badge" data-badge-caption="">4</span></a></li>';
+echo '		<li><a class="mike_padding_left_7" href="message.html">Message(s)<span class="new badge" data-badge-caption="">4</span></a></li>	';
+echo '	</ul>';
+echo '	<ul id="nav-mobile" class="right hide-on-large-only hide-on-small-only">';
+echo '		<li><a class="mike_padding_left_12 mike_inline_icone_notif" href=""><i class="material-icons">star</i><span class="new white-text" data-badge-caption="">4</span></a></li>';
+echo '		<li><a class="modal-trigger mike_padding_left_12 mike_inline_icone_notif" href="#visite"><i class="material-icons">remove_red_eye</i><span class="new badge" data-badge-caption="">4</span></a></li>';
+echo '		<li><a class="modal-trigger mike_padding_left_12 mike_inline_icone_notif" href="#like"><i class="material-icons"><i class="material-icons">person_add</i></i><span class="new badge" data-badge-caption="">4</span></a></li>';
+echo '		<li><a class="mike_padding_left_12 mike_inline_icone_notif" href="javascript:message();"><i class="material-icons">message</i><span class="new badge" data-badge-caption="">4</span></a></li>';
+echo '	</ul>';
+echo '</div>';
+echo '	</nav>';
+echo '	<br>';
+echo '	<br>';
+echo '	<br>';
+echo '	<br>';
+echo '	<nav class="container hide-on-med-and-up">';
+echo '		<div class="nav-wrapper container">';
+echo '			<ul id="nav-mobile">';
+echo '				<li><a class="mike_padding_left_7 mike_inline_icone_notif" href=""><i class="material-icons">star</i><span class="white-text badge" data-badge-caption="">4</span></a></li>';
+echo '				<li><a class="modal-trigger mike_padding_left_7 mike_inline_icone_notif" href="#visite"><i class="material-icons">remove_red_eye</i><span class="new badge" data-badge-caption="">4</span></a></li>';
+echo '				<li><a class="modal-trigger mike_padding_left_7 mike_inline_icone_notif" href="#like"><i class="material-icons"><i class="material-icons">person_add</i></i><span class="new badge" data-badge-caption="">4</span></a></li>';
+echo '				<li><a class="mike_padding_left_7 mike_inline_icone_notif" href="message.html"><i class="material-icons">message</i><span class="new badge" data-badge-caption="">4</span></a></li>';
+echo '			</ul>';
+echo '		</div>';
+echo '	</nav>';
+?>
